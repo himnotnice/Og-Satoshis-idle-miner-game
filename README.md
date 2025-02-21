@@ -1,0 +1,1 @@
+# Og-Satoshis-idle-miner-game
