@@ -6,7 +6,27 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
   <script src="sketch.js"></script>
   <style>
-    body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #222; }
+    body { <!-- Basic Miner Card -->
+<div class="miner-card">
+  <div class="miner-image" 
+       style="background-image: url('https://raw.githubusercontent.com/himnotnice/Og-Satoshis-idle-miner-game/main/miner1.png')">
+  </div>
+  <h3>Ordinal Miner</h3>
+  <div>Production: 1 sat/3s</div>
+  <button onclick="buyMiner('basic')" id="basicMinerBtn">Buy (50 sats)</button>
+  <div>Owned: <span id="basicMinerCount">0</span></div>
+</div>
+
+<!-- Advanced Miner Card -->
+<div class="miner-card">
+  <div class="miner-image" 
+       style="background-image: url('https://raw.githubusercontent.com/himnotnice/Og-Satoshis-idle-miner-game/main/miner2.png')">
+  </div>
+  <h3>Inscription Crafter</h3>
+  <div>Production: 5 sat/3s</div>
+  <button onclick="buyMiner('advanced')" id="advancedMinerBtn" disabled>Buy (500 sats)</button>
+  <div>Owned: <span id="advancedMinerCount">0</span></div>
+</div>}
     canvas { border: 1px solid #fff; }
   </style>
 </head>
